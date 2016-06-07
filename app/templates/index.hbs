@@ -1,0 +1,14 @@
+{{outlet}}
+<h1> Welcome to Super Bustle </h1>
+
+<div class="row">
+  {{#each model as |bustle|}}
+    <div class="col-xs-4">
+      <h4>{{bustle.headline}}</h4>
+      <img src={{bustle.image}}>
+    </div>
+  {{/each}}
+</div>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
